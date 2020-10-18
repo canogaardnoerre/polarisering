@@ -24,7 +24,7 @@ html, * {
 body {
   max-width: 100vw;
   background: url(/img/bakgrunn.png) no-repeat top center;
-  background-color: 17171e;
+  background-color: #17171e;
   background-size: cover;
   display: grid;
   grid-template-columns: auto;
@@ -40,7 +40,6 @@ header {
 
 header h1 {
   transform: translateX(0) rotate(-45deg);
-  position: relative;
   text-align: center; }
 
 section {
@@ -60,10 +59,18 @@ section {
   color: #39BCBB; }
 
 .section-set1 {
-  color: #39BCBB; }
+  color: #39BCBB;
+  width: 500px; }
+
+.section-set2 .section-set4 {
+  width: 500px; }
 
 .section-set3 {
-  color: #39BCBB; }
+  color: #39BCBB;
+  width: 500px; }
+
+.section-set4 {
+  width: 500px; }
 
 .section-set5 {
   text-align: center;
@@ -74,15 +81,23 @@ section {
   justify-content: end;
   color: #39BCBB; }
 
+.sec10 {
+  text-decoration: underline; }
+
 .sec7 {
   justify-content: end;
   color: #17171F; }
 
+.sec11 {
+  text-align: end; }
+
+.sec12 {
+  color: #39BCBB; }
+
 a {
   font-size: 3em;
   color: #39BCBB;
-  text-decoration: none;
-  margin-top: 90 vh; }
+  text-decoration: none; }
 
 h1 {
   color: #39BCBB;
@@ -94,11 +109,7 @@ h2 {
   font-size: 2.5em; }
 
 p {
-  font-size: 2em;
-  width: 500px; }
-
-.rules p {
-  width: 1000px; }
+  font-size: 2em; }
 
 span {
   color: #A82225; }

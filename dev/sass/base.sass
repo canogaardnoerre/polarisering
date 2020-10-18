@@ -4,7 +4,7 @@ html, *
 body	
 	max-width: $sectionwidth	
 	background: url(#{$img-path}/bakgrunn.png) no-repeat top center
-	background-color: 17171e
+	background-color: #17171e
 	background-size: cover
 	display: grid
 	grid-template-columns: auto
@@ -20,7 +20,6 @@ header
 
 header h1 
 	transform: translateX(0) rotate(-45deg)
-	position: relative
 	text-align: center
 	
 section
@@ -41,30 +40,47 @@ section
 
 .section-set1
 	color: $elementcolor1
+	width: $paragraph-width
+
+.section-set2 .section-set4
+	width: $paragraph-width
 
 .section-set3
 	color: $elementcolor1
+	width: $paragraph-width
+
+.section-set4
+	width: $paragraph-width
+
 
 .section-set5
 	text-align: center
 	width: 100%
 	color: $elementcolor1
 
-.sec3
+.sec3 
 	justify-content: end
 	color: $elementcolor1
+
+
+.sec10
+	text-decoration: underline
 
 .sec7 
 	justify-content: end
 	color: $background
 
+.sec11
+	text-align: end
+
+.sec12
+	color: $elementcolor1
 
 
 a
 	font-size: $font-size * 3
 	color: $elementcolor1
 	text-decoration: none
-	margin-top: 90 vh
 
 h1
 	color: $elementcolor1
@@ -77,13 +93,7 @@ h2
 	
 p 
 	font-size: $font-size * 2
-	width: $paragaph-width
-	//position: relative
-
-
-.rules p 
-	width: $paragaph-width * 2
+ 
 	
-
 span
 	color: $elementcolor2
