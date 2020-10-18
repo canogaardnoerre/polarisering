@@ -62,7 +62,7 @@ section {
   color: #39BCBB;
   width: 500px; }
 
-.section-set2 .section-set4 {
+.section-set2 {
   width: 500px; }
 
 .section-set3 {
@@ -93,6 +93,9 @@ section {
 
 .sec12 {
   color: #39BCBB; }
+
+.instagram {
+  text-align: center; }
 
 a {
   font-size: 3em;
