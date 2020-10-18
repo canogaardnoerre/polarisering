@@ -1,2 +1,2 @@
-# polarisering
- Digital Markedsføring @ Fagskole Kristiania
+# tema-10
+ 

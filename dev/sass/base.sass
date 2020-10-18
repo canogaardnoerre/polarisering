@@ -1,38 +1,57 @@
 body
 	background: url(#{$img-path}/bakgrunn.png) no-repeat
+	scroll: smooth
 
 header
 	max-width: $sectionwidth
 	height: $sectionheight
 	display: grid
 	place-items: center
-
-header h1 
-	transform: translateX(100%) rotate(-45deg)
 	
 
+header h1 
+	transform: translateX(0) rotate(-45deg)
+	position: relative
+	
+	text-alaign: center
+	
+	
 section
 	width: $sectionwidth
 	height: $sectionheight
-	
+	diaplay: grid
+	place-items: left
+	padding: $site-margin
+
+.sec3 , .sec6  
+	place-items: right
 
 .sec1
 	display: grid
 	place-items: center
 
+	
 
-h1, h2 
-	color: $elementcolor2
+h1
+	color: $elementcolor1
 	font-size: $font-size * 4
-
-
 
 h2
 	font-size: $font-size * 3
+	color: $elementcolor2
 
 p 
 	color: $elementcolor1
 	font-size: $font-size * 2
+	padding-bottom: $padding
+	width: $paragaph-width
+	position: relative
+
+.sec2 p
+	padding: left
+
+.rules p 
+	width: $paragaph-width * 2
 	
-
-
+span 
+	color: $elementcolor2

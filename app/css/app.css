@@ -1,50 +1,88 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0; 
+}
 
 h1, h2, h3, h4, h5 {
   font-size: inherit;
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 button {
   font: inherit;
   border: 0;
-  text-align: left; }
+  text-align: left; 
+}
 
 @font-face {
-  font-family: "Inter UI Regular";
+  font-family: "Josefin Sans";
   src: url("../assets/Inter-Regular.woff");
   font-weight: normal;
-  font-style: regular; }
+  font-style: regular; 
+}
 
 body {
-  background: url(/img/bakgrunn.png) no-repeat; }
+  background: url(/img/bakgrunn.png) no-repeat;
+  scroll: smooth; 
+}
 
 header {
   max-width: 100vw;
-  height: 100vh;
+  height: 1087px;
   display: grid;
-  place-items: center; }
+  place-items: center; 
+}
 
 header h1 {
-  transform: translateX(100%) rotate(-45deg); }
+  transform: translateX(0) rotate(-45deg);
+  position: relative;
+  text-align: center; 
+}
 
 section {
   width: 100vw;
-  height: 100vh; }
+  height: 1087px;
+  display: grid;
+  place-items: left;
+  padding: 140px; 
+}
+
+.sec3, .sec6 {
+  place-items: right; 
+}
 
 .sec1 {
   display: grid;
-  place-items: center; }
+  place-items: center; 
+}
 
-h1, h2 {
-  color: #A82225;
-  font-size: 4em; }
+h1 {
+  color: #39BCBB;
+  font-size: 4em; 
+}
 
 h2 {
-  font-size: 3em; }
+  font-size: 3em;
+  color: #A82225; 
+}
 
 p {
   color: #39BCBB;
-  font-size: 2em; }
+  font-size: 2em;
+  padding-bottom: 1em;
+  width: 674px;
+  position: relative; 
+}
+
+.sec2 p {
+  padding: left; 
+}
+
+.rules p {
+  width: 1348px; 
+}
+
+span {
+  color: #A82225; 
+}
