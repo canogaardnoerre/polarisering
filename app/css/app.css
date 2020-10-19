@@ -29,7 +29,8 @@ body {
   display: grid;
   grid-template-columns: auto;
   overflow-x: hidden;
-  font-family: "Josefin Sans"; }
+  font-family: "Josefin Sans";
+  z-index: 10; }
 
 header {
   max-width: 100vw;
@@ -40,7 +41,8 @@ header {
 
 header h1 {
   transform: translateX(0) rotate(-45deg);
-  text-align: center; }
+  text-align: center;
+  margin-left: 90px; }
 
 section {
   width: 100vw;
@@ -80,9 +82,6 @@ section {
 .sec3 {
   justify-content: end;
   color: #39BCBB; }
-
-.sec10 {
-  text-decoration: underline; }
 
 .sec7 {
   justify-content: end;
