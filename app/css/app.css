@@ -57,6 +57,9 @@ section {
 .bottom-alignment {
   align-self: self-end; }
 
+.title 
+  
+
 .title2 {
   color: #39BCBB; }
 
@@ -115,3 +118,9 @@ p {
 
 span {
   color: #A82225; }
+
+.instagram {
+  transition: 0.2s all; }
+
+.instagram:hover {
+  transform: scale(1.2); }
