@@ -31,6 +31,9 @@ section
 	padding: $site-margin
 	scroll-snap-align: center
 
+.sec1 
+	text-align: center
+
 .centered-alignment
 	align-self: center
 
@@ -106,6 +109,28 @@ span
 
 .instagram 
 	transition: 0.2s all
+	cursor: pointer
 
-.instagram:hover 
+.instagram:hover, .facebook:hover
 	transform: scale(1.2)
+	
+
+.facebook
+	transition: 0.2s all
+	text-align: center
+	cursor: pointer
+
+.fish-container 
+	cursor: pointer
+	transition: 0.2s all
+	width: 100%
+	display: grid
+
+.fish-container:hover
+	transform: scale(1.2)
+	
+
+input[type=checkbox]:checked 
+    outline: none
+	border-radius: 80%
+
