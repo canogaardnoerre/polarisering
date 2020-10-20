@@ -93,6 +93,7 @@ h2
 
 p 
 	font-size: $font-size * 2
+	color: $elementcolor1
  
 span
 	color: $elementcolor2
@@ -102,9 +103,15 @@ a
 	color: $elementcolor1
 	text-decoration: none
 	position: relative
+	left: 8vw
+	top: 43vh
+	z-index: 100
 	
 .godfisk
-	text-align: center
+	position: relative
+	left: 46vw
+	bottom: 23vh
+	z-index: 100
 
 .instagram 
 	transition: 0.2s all
@@ -124,16 +131,18 @@ a
 	display: grid
 	grid-auto-flow: center
 	
+.red-fish
+	position: relative
+	width: 80vw
 
-.red-fish:hover
+.red-fish:hover, .blue-fish:hover
 	transform: scale(1.2)
 
-.red-fisk
-	position: relative
-
 .blue-fish 
-	width: 200px
+	width: 40vw
 	position: relative
+	left: 40vw
+	z-index: 10
 
 // input[type="checkbox"]:checked
 //     outline: none
