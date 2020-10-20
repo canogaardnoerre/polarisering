@@ -54,15 +54,6 @@ section {
 .sec1 {
   text-align: center; }
 
-.centered-alignment {
-  align-self: center; }
-
-.bottom-alignment {
-  align-self: self-end; }
-
-.title2 {
-  color: #39BCBB; }
-
 .section-set1 {
   color: #39BCBB;
   width: 500px; }
@@ -95,6 +86,12 @@ section {
   place-items: center;
   grid-template-columns: auto; }
 
+.centered-alignment {
+  align-self: center; }
+
+.bottom-alignment {
+  align-self: self-end; }
+
 h1 {
   color: #39BCBB;
   font-size: 4em;
@@ -104,15 +101,9 @@ h2 {
   color: #A82225;
   font-size: 2.5em; }
 
-.title2 {
-  color: #39BCBB; }
-
 p {
   font-size: 2em;
   color: #39BCBB; }
-
-span {
-  color: #A82225; }
 
 a {
   font-size: 3em;
@@ -123,39 +114,46 @@ a {
   top: 43vh;
   z-index: 100; }
 
+.title2 {
+  color: #39BCBB; }
+
 .godfisk {
   position: relative;
   left: 46vw;
   bottom: 23vh;
   z-index: 100; }
 
+span {
+  color: #A82225; }
+
 .instagram {
   transition: 0.2s all;
   cursor: pointer; }
-
-.instagram:hover, .facebook:hover {
-  transform: scale(1.2); }
 
 .facebook {
   transition: 0.2s all;
   text-align: center;
   cursor: pointer; }
 
+.instagram:hover, .facebook:hover {
+  transform: scale(1.2); }
+
 .fish-container {
   cursor: pointer;
-  transition: 0.2s all;
   display: grid;
   grid-auto-flow: center; }
 
 .red-fish {
   position: relative;
-  width: 80vw; }
-
-.red-fish:hover, .blue-fish:hover {
-  transform: scale(1.2); }
+  width: 80vw;
+  transition: 0.2s all; }
 
 .blue-fish {
   width: 40vw;
   position: relative;
   left: 40vw;
-  z-index: 10; }
+  z-index: 10;
+  transition: 0.2s all; }
+
+.red-fish:hover, .blue-fish:hover {
+  transform: scale(1.2); }
