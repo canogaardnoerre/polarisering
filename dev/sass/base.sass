@@ -82,14 +82,10 @@ section
 
 .sec12
 	color: $elementcolor1
+	place-items: center
+	grid-template-columns: auto
 
-.instagram
-	text-align: center
 
-a
-	font-size: $font-size * 3
-	color: $elementcolor1
-	text-decoration: none
 
 h1
 	color: $elementcolor1
@@ -106,6 +102,15 @@ p
 	
 span
 	color: $elementcolor2
+
+a
+	font-size: $font-size * 3
+	color: $elementcolor1
+	text-decoration: none
+	position: relative
+	
+.godfisk
+	text-align: center
 
 .instagram 
 	transition: 0.2s all
@@ -125,10 +130,18 @@ span
 	transition: 0.2s all
 	width: 100%
 	display: grid
-
-.fish-container:hover
-	transform: scale(1.2)
+	grid-template-areas: auto
 	
+
+.red-fish:hover
+	transform: scale(1.2)
+
+.red-fisk
+	position: relative
+
+.blue-fish 
+	width: 200px
+	position: relative
 
 input[type=checkbox]:checked 
     outline: none

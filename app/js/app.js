@@ -22,16 +22,16 @@ function addAnimation() {
 addAnimation()
 
 
-const sec12 = document.querySelector("#1")
-const sec12 = document.querySelector("#2")
-const sec12 = document.querySelector("#3")
-const sec12 = document.querySelector("#4")
-const sec12 = document.querySelector("#5")
-const sec12 = document.querySelector("#6")
+// const sec12 = document.querySelector("#1")
+// const sec12 = document.querySelector("#2")
+// const sec12 = document.querySelector("#3")
+// const sec12 = document.querySelector("#4")
+// const sec12 = document.querySelector("#5")
+// const sec12 = document.querySelector("#6")
 
-function vis() {
+// function vis() {
     
-}
+// }
 
-sec12.onclick = vis
+// sec12.onclick = vis
 
