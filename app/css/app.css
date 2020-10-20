@@ -90,19 +90,10 @@ section {
   justify-content: end;
   color: #17171F; }
 
-.sec11 {
-  text-align: end; }
-
 .sec12 {
-  color: #39BCBB; }
-
-.instagram {
-  text-align: center; }
-
-a {
-  font-size: 3em;
   color: #39BCBB;
-  text-decoration: none; }
+  place-items: center;
+  grid-template-columns: auto; }
 
 h1 {
   color: #39BCBB;
@@ -113,11 +104,23 @@ h2 {
   color: #A82225;
   font-size: 2.5em; }
 
+.title2 {
+  color: #39BCBB; }
+
 p {
   font-size: 2em; }
 
 span {
   color: #A82225; }
+
+a {
+  font-size: 3em;
+  color: #39BCBB;
+  text-decoration: none;
+  position: relative; }
+
+.godfisk {
+  text-align: center; }
 
 .instagram {
   transition: 0.2s all;
@@ -134,11 +137,15 @@ span {
 .fish-container {
   cursor: pointer;
   transition: 0.2s all;
-  width: 100%;
-  display: grid; }
+  display: grid;
+  grid-auto-flow: center; }
 
-.fish-container:hover {
+.red-fish:hover {
   transform: scale(1.2); }
 
-input[type=checkbox]:checked {
-  outline: none; }
+.red-fisk {
+  position: relative; }
+
+.blue-fish {
+  width: 200px;
+  position: relative; }

@@ -1,11 +1,19 @@
 function addAnimation() {
-  let text1 = document.querySelector('.title2');
+  let title1 = document.querySelector('.title2');
+  let text1 = document.querySelector('.section-set1');
+  let text2 = document.querySelector('.section-set2');
+  let text3 = document.querySelector('.section-set3');
+  
 
+  title1.innerHTML = title1.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
   text1.innerHTML = text1.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+  text2.innerHTML = text2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+  text3.innerHTML = text3.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+  
   
   anime.timeline({loop: true})
     .add({
-      targets: '.title2 .letter',
+      targets: '.title2',
       opacity: [0,1],
       easing: "easeInOutQuad",
       duration: 40,
@@ -20,6 +28,12 @@ function addAnimation() {
 }
 
 addAnimation()
+
+
+
+
+
+
 
 
 // const sec12 = document.querySelector("#1")
