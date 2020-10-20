@@ -52,8 +52,8 @@ section {
   scroll-snap-align: center; }
 
 .sec1 {
-  text-align: center;
-  place-content: center; }
+  text-align: left;
+  place-content: center left; }
 
 .sec3 {
   justify-content: end;
@@ -98,19 +98,19 @@ a {
   font-size: 3em;
   color: #39BCBB;
   text-decoration: none;
+  width: 40vw;
   position: relative;
-  left: 8vw;
-  top: 43vh;
+  left: 31vw;
+  top: 50vh;
   z-index: 100; }
 
 .title2 {
-  color: #39BCBB;
-  text-align: center; }
+  color: #39BCBB; }
 
 .godfisk {
   position: relative;
   left: 46vw;
-  bottom: 23vh;
+  bottom: 25vh;
   z-index: 100; }
 
 .section-set4, .section-set2 {
@@ -125,6 +125,18 @@ a {
   width: 80vw; }
 
 span {
+  color: #A82225; }
+
+.lesom {
+  color: #17171F; }
+
+.letter {
+  color: #39BCBB; }
+
+.letter2 {
+  color: #17171F; }
+
+#men {
   color: #A82225; }
 
 .instagram {
@@ -153,7 +165,7 @@ span {
   width: 80vw; }
 
 .blue-fish {
-  width: 40vw;
+  width: 45vw;
   position: relative;
   left: 40vw;
   z-index: 10; }
