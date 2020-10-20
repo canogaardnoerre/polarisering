@@ -54,25 +54,6 @@ section {
 .sec1 {
   text-align: center; }
 
-.section-set1 {
-  color: #39BCBB;
-  width: 500px; }
-
-.section-set2 {
-  width: 500px; }
-
-.section-set3 {
-  color: #39BCBB;
-  width: 500px; }
-
-.section-set4 {
-  width: 500px; }
-
-.section-set5 {
-  text-align: center;
-  width: 100%;
-  color: #39BCBB; }
-
 .sec3 {
   justify-content: end;
   color: #39BCBB; }
@@ -103,7 +84,8 @@ h2 {
 
 p {
   font-size: 2em;
-  color: #39BCBB; }
+  color: #39BCBB;
+  width: 500px; }
 
 a {
   font-size: 3em;
@@ -122,6 +104,14 @@ a {
   left: 46vw;
   bottom: 23vh;
   z-index: 100; }
+
+.section-set4, .section-set2 {
+  color: #17171F; }
+
+.section-set5 {
+  text-align: center;
+  width: 100%;
+  color: #39BCBB; }
 
 span {
   color: #A82225; }
@@ -156,4 +146,4 @@ span {
   transition: 0.2s all; }
 
 .red-fish:hover, .blue-fish:hover {
-  transform: scale(1.2); }
+  transform: scale(1.1); }
