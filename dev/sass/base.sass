@@ -48,6 +48,7 @@ section
 	color: $elementcolor1
 	place-items: center
 	grid-template-columns: auto
+	text-align: left
 
 .centered-alignment
 	align-self: center
@@ -82,6 +83,7 @@ a
 
 .title2 
 	color: $elementcolor1
+	text-align: center
 
 .godfisk
 	position: relative
@@ -96,6 +98,9 @@ a
 	text-align: center
 	width: 100%
 	color: $elementcolor1
+
+input p
+	width: 100%
 
 span
 	color: $elementcolor2
@@ -120,21 +125,22 @@ span
 	cursor: pointer
 	display: grid
 	grid-auto-flow: center
+	transition: 0.2s all
+	
+.fish-container:hover
+	transform: scale(1.1)
 	
 .red-fish
 	position: relative
 	width: 80vw
-	transition: 0.2s all
-
-.blue-fish 
+	.blue-fish 
 	width: 40vw
 	position: relative
 	left: 40vw
 	z-index: 10
-	transition: 0.2s all
+	
 
-.red-fish:hover, .blue-fish:hover
-	transform: scale(1.1)
+
 
 
 
