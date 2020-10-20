@@ -35,6 +35,7 @@ section
 
 .sec1 
 	text-align: center
+	place-content: center
 
 .sec3 
 	justify-content: end
@@ -55,6 +56,13 @@ section
 
 .bottom-alignment
 	align-self: self-end
+
+// Div-er
+
+.rules 
+	display: grid
+	grid-template-columns: auto	auto 
+	gap: $padding * 2
 
 // Tekst
 
@@ -99,8 +107,8 @@ a
 	width: 100%
 	color: $elementcolor1
 
-input p
-	width: 100%
+.sec12 p
+	width: 80vw
 
 span
 	color: $elementcolor2
@@ -133,16 +141,12 @@ span
 .red-fish
 	position: relative
 	width: 80vw
-	.blue-fish 
+
+.blue-fish 
 	width: 40vw
 	position: relative
 	left: 40vw
 	z-index: 10
-	
-
-
-
-
 
 // input[type="checkbox"]:checked
 //     outline: none
