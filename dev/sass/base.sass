@@ -4,7 +4,6 @@ html, *
 body	
 	max-width: $sectionwidth	
 	background: url(#{$img-path}/bakgrunn.png) no-repeat top center
-	background-color: #17171e
 	background-size: cover
 	display: grid
 	grid-template-columns: auto
@@ -12,6 +11,9 @@ body
 	font-family: $font
 	z-index: 10
 
+	+mobile
+		background: url(#{$img-path}/bakgrunn-mobil.png) no-repeat top center
+	
 header
 	max-width: $sectionwidth
 	height: $sectionheight
@@ -19,10 +21,9 @@ header
 	place-items: center
 	scroll-snap-align: center
 
-header h1 
-	transform: translateX(0) rotate(-45deg)
-	text-align: center
-	margin-left: 90px
+	+mobile
+		height: 50vh
+
 
 // Seksjoner
 
@@ -33,13 +34,25 @@ section
 	padding: $site-margin
 	scroll-snap-align: center
 
+	+mobile 
+		height: 80vh
+		place-items: center
+
 .sec1 
 	text-align: left
 	place-content: center left
 
+	+mobile
+	place-content: none
+
+
 .sec3 
 	justify-content: end
 	color: $elementcolor1
+
+.sec4, .sec8
+	+mobile
+		height: 0
 
 .sec7 
 	justify-content: end
@@ -51,35 +64,92 @@ section
 	grid-template-columns: auto
 	text-align: left
 
+// Div-er
+
 .centered-alignment
 	align-self: center
+	position: relative
+
+	+mobile
+	right: 10vw
+	bottom: 10vh
+
+.sec6 .centered-alignment
+	+mobile 
+		bottom: 65vh
+
 
 .bottom-alignment
 	align-self: self-end
+	position: relative
 
-// Div-er
-
+	+mobile
+		align-self: center
+		
 .rules 
 	display: grid
 	grid-template-columns: auto	auto 
 	gap: $padding * 2
 
+.fish-container 
+	cursor: pointer
+	display: grid
+	grid-auto-flow: center
+	transition: 0.2s all
+	
+.fish-container:hover
+	transform: scale(1.1)
+
+.video
+	display: grid
+	grid-template-columns: auto
+	place-items: center
+
+.ikoner
+	display: grid
+	grid-template-columns: auto auto
+	place-content: center
+	gap: $padding 
+	padding: $padding * 2
+
 // Tekst
 
-h1
+header h1 
+	transform: translateX(0) rotate(-45deg)
+	text-align: center
+	margin-left: 90px
 	color: $elementcolor1
 	font-size: $font-size * 4
 	position: relative
 
+	+mobile
+		font-size: $font-size * 2
+		margin-left: 0
+		width: 95vw
+		bottom: 7vh
+		padding: $padding * 2.5 
+		line-height: $line-height
+
 h2 
 	color: $elementcolor2
 	font-size: $font-size * 2.5
+	position: relative
+	
+	+mobile
+		font-size: $font-size * 1.2
+		width: 80vw
+		
 
 p 
 	font-size: $font-size * 2
 	color: $elementcolor1
 	width: $paragraph-width
- 
+	position: relative
+
+	+mobile
+		font-size: $font-size
+		width: 80vw
+		
 a
 	font-size: $font-size * 3
 	color: $elementcolor1
@@ -99,13 +169,30 @@ a
 	bottom: 25vh
 	z-index: 100
 
+.section-set1
+	+mobile
+		bottom: 10vh
+
 .section-set4, .section-set2
 	color: $background
+	
+	+mobile
+		bottom: 0
+		left: 20vw
+
+.section-set4
+	+mobile
+		bottom: 40vh
+		left: 30vw
 
 .section-set5
 	text-align: center
 	width: 100%
 	color: $elementcolor1
+
+	+mobile
+		bottom: 80vh
+		left: 10vw
 
 .sec12 p
 	width: 80vw
@@ -141,14 +228,7 @@ span
 	
 // Fisker
 
-.fish-container 
-	cursor: pointer
-	display: grid
-	grid-auto-flow: center
-	transition: 0.2s all
-	
-.fish-container:hover
-	transform: scale(1.1)
+
 	
 .red-fish
 	position: relative
@@ -159,6 +239,18 @@ span
 	position: relative
 	left: 40vw
 	z-index: 10
+
+// Ikoner
+
+.icon-arrow 
+	width: 45px
+	position: relative
+	top: 56vh
+	left: 25vw
+	z-index: 100
+
+
+
 
 // input[type="checkbox"]:checked
 //     outline: none
