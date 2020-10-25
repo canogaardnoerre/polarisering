@@ -72,11 +72,19 @@ section {
   justify-content: end;
   color: #17171F; }
 
+.sec9 {
+  padding-items: center;
+  text-align: center; }
+
 .sec12 {
   color: #39BCBB;
   place-items: center;
-  grid-template-columns: auto;
   text-align: left; }
+
+.sec13 {
+  place-items: center;
+  grid-template-columns: auto;
+  text-align: center; }
 
 .centered-alignment {
   align-self: center;
@@ -98,7 +106,8 @@ section {
 .rules {
   display: grid;
   grid-template-columns: auto	auto;
-  gap: 2em; }
+  gap: 2em;
+  position: relative; }
 
 .fish-container {
   cursor: pointer;
@@ -119,7 +128,8 @@ section {
   grid-template-columns: auto auto;
   place-content: center;
   gap: 1em;
-  padding: 2em; }
+  padding-top: 4em;
+  padding-bottom: 2em; }
 
 header h1 {
   transform: translateX(0) rotate(-45deg);
@@ -218,14 +228,19 @@ span {
 #men {
   color: #A82225; }
 
+.sec13 p {
+  font-size: 1em; }
+
 .instagram {
   transition: 0.2s all;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 30px; }
 
 .facebook {
   transition: 0.2s all;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 15px; }
 
 .instagram:hover, .facebook:hover {
   transform: scale(1.2); }
