@@ -22,6 +22,7 @@ html, * {
   scroll-snap-type: Y mandatory; }
 
 body {
+  background-color: #17171F;
   max-width: 100vw;
   background: url(/img/bakgrunn.png) no-repeat top center;
   background-size: cover;
@@ -76,15 +77,30 @@ section {
   padding-items: center;
   text-align: center; }
 
+.sec10 {
+  place-items: top;
+  position: relative;
+  bottom: 80vh; }
+
+@media screen and (max-width: 1024px) {
+  .sec11 {
+    background-color: #17171F; } }
+
 .sec12 {
   color: #39BCBB;
   place-items: center;
   text-align: left; }
+  @media screen and (max-width: 1024px) {
+    .sec12 {
+      background-color: #17171F; } }
 
 .sec13 {
   place-items: center;
   grid-template-columns: auto;
   text-align: center; }
+  @media screen and (max-width: 1024px) {
+    .sec13 {
+      background-color: #17171F; } }
 
 .centered-alignment {
   align-self: center;
@@ -95,6 +111,9 @@ section {
 @media screen and (max-width: 1024px) {
   .sec6 .centered-alignment {
     bottom: 65vh; } }
+
+.centered-alignment .fishcontainer {
+  position: relative; }
 
 .bottom-alignment {
   align-self: self-end;
@@ -108,6 +127,11 @@ section {
   grid-template-columns: auto	auto;
   gap: 2em;
   position: relative; }
+  @media screen and (max-width: 1024px) {
+    .rules {
+      width: 50vw;
+      right: 26vw;
+      line-height: 1.2em; } }
 
 .fish-container {
   cursor: pointer;
@@ -175,6 +199,11 @@ a {
   left: 31vw;
   top: 50vh;
   z-index: 100; }
+  @media screen and (max-width: 1024px) {
+    a {
+      font-size: 1.5em;
+      left: 20vw;
+      top: 0; } }
 
 .title2 {
   color: #39BCBB; }
@@ -184,6 +213,11 @@ a {
   left: 46vw;
   bottom: 25vh;
   z-index: 100; }
+  @media screen and (max-width: 1024px) {
+    .godfisk {
+      font-size: 1em;
+      bottom: 99vh;
+      left: 20vw; } }
 
 @media screen and (max-width: 1024px) {
   .section-set1 {
@@ -248,12 +282,21 @@ span {
 .red-fish {
   position: relative;
   width: 80vw; }
+  @media screen and (max-width: 1024px) {
+    .red-fish {
+      right: 10vw;
+      bottom: 18vh; } }
 
 .blue-fish {
   width: 45vw;
   position: relative;
   left: 40vw;
   z-index: 10; }
+  @media screen and (max-width: 1024px) {
+    .blue-fish {
+      width: 55vw;
+      bottom: 89vh;
+      left: 12vw; } }
 
 .icon-arrow {
   width: 45px;
@@ -261,3 +304,8 @@ span {
   top: 56vh;
   left: 25vw;
   z-index: 100; }
+  @media screen and (max-width: 1024px) {
+    .icon-arrow {
+      width: 25px;
+      left: 12vw;
+      top: 3.5vh; } }

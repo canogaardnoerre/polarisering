@@ -1,8 +1,11 @@
 html, *
 	scroll-snap-type: Y mandatory
 	
+	
+	
 body	
-	max-width: $sectionwidth	
+	background-color: $background
+	max-width: $sectionwidth
 	background: url(#{$img-path}/bakgrunn.png) no-repeat top center
 	background-size: cover
 	display: grid
@@ -62,16 +65,30 @@ section
 	padding-items: center
 	text-align: center
 
+.sec10
+	place-items: top
+	position: relative
+	bottom: 80vh
+
+.sec11
+	+mobile
+		background-color: $background
+
 .sec12
 	color: $elementcolor1
 	place-items: center
 	text-align: left
+
+	+mobile
+		background-color: $background
 
 .sec13
 	place-items: center
 	grid-template-columns: auto
 	text-align: center
 
+	+mobile
+		background-color: $background
 // Div-er
 
 .centered-alignment
@@ -86,6 +103,11 @@ section
 	+mobile 
 		bottom: 65vh
 
+.centered-alignment .fishcontainer
+	position: relative
+
+	
+
 
 .bottom-alignment
 	align-self: self-end
@@ -99,6 +121,11 @@ section
 	grid-template-columns: auto	auto 
 	gap: $padding * 2
 	position: relative
+
+	+mobile 
+		width: 50vw
+		right: 26vw
+		line-height: $line-height
 
 .fish-container 
 	cursor: pointer
@@ -170,6 +197,12 @@ a
 	top: 50vh
 	z-index: 100
 
+	+mobile
+		font-size: $font-size * 1.5
+		left: 20vw
+		top: 0
+		
+
 .title2 
 	color: $elementcolor1
 
@@ -178,6 +211,11 @@ a
 	left: 46vw
 	bottom: 25vh
 	z-index: 100
+
+	+mobile
+		font-size: $font-size
+		bottom: 99vh
+		left: 20vw
 
 .section-set1
 	+mobile
@@ -251,11 +289,20 @@ span
 	position: relative
 	width: 80vw
 
+	+mobile
+		right: 10vw
+		bottom: 18vh
+
 .blue-fish 
 	width: 45vw
 	position: relative
 	left: 40vw
 	z-index: 10
+
+	+mobile
+		width: 55vw
+		bottom: 89vh
+		left: 12vw
 
 // Ikoner
 
@@ -265,6 +312,11 @@ span
 	top: 56vh
 	left: 25vw
 	z-index: 100
+
+	+mobile
+		width: 25px
+		left: 12vw
+		top: 3.5vh
 
 
 
